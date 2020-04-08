@@ -20,22 +20,6 @@
     />
 </head>
 <body>
-    <script src="main.js"></script>
-    <script
-        src="https://code.jquery.com/jquery-3.4.1.slim.js"
-        integrity="sha256-BTlTdQO9/fascB1drekrDVkaKd9PkwBymMlHOiG+qLI="
-        crossorigin="anonymous"
-    ></script>
-    <script 
-        src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" 
-        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" 
-        crossorigin="anonymous"
-    ></script>
-    <script 
-        src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js" 
-        integrity="sha384-6khuMg9gaYr5AxOqhkVIODVIvm9ynTT5J4V1cfthmT+emCG6yVmEZsRHdxlotUnm" 
-        crossorigin="anonymous"
-    ></script>
     <div class="container mt-5">
         <h1>Incrível calculadora de caracteres, palavras e linhas</h1>
         <p>Digite ou cole seu texto abaixo.</p>
@@ -53,10 +37,18 @@
                 </form>
                 <div id="results">
                     <ul class="list-group">
-                        <li class="list-group-item">Caracteres sem espaço:</li>
-                        <li class="list-group-item">Caracteres com espaço:</li>
-                        <li class="list-group-item">Palavras:</li>
-                        <li class="list-group-item">Linhas:</li>
+                        <li class="list-group-item">
+                            Caracteres sem espaço: <span id="without-spaces"></span>
+                        </li>
+                        <li class="list-group-item">
+                            Caracteres com espaço: <span id="with-spaces"></span>
+                        </li>
+                        <li class="list-group-item">
+                            Palavras: <span id="words"></span>
+                        </li>
+                        <li class="list-group-item">
+                            Linhas: <span id="lines"></span>
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -68,5 +60,21 @@
             </div>
         </div>
     </div>
+    <script src="main.js"></script>
+    <script
+        src="https://code.jquery.com/jquery-3.4.1.slim.js"
+        integrity="sha256-BTlTdQO9/fascB1drekrDVkaKd9PkwBymMlHOiG+qLI="
+        crossorigin="anonymous"
+    ></script>
+    <script 
+        src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" 
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" 
+        crossorigin="anonymous"
+    ></script>
+    <script 
+        src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js" 
+        integrity="sha384-6khuMg9gaYr5AxOqhkVIODVIvm9ynTT5J4V1cfthmT+emCG6yVmEZsRHdxlotUnm" 
+        crossorigin="anonymous"
+    ></script>
 </body>
 </html>
